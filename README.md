@@ -1,2 +1,3 @@
 # erle_gazebo_models
-Erle gazebo models
+
+To include this models in Gazebo copy this folders in ~/.gazebo/models
