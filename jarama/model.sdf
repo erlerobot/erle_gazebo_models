@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+
+ <model name="jarama">
+      	<static>true</static>
+
+      
+      <link name="link2">    
+
+      	<collision name="collision">
+		     <geometry>
+	        	<heightmap>
+					<uri>model://jarama/images/jaramaCircuitoRetocado.png</uri>
+					<size>250 250 1</size>
+					<pos>0 0 0</pos>
+	        	</heightmap>
+		     </geometry>
+      	</collision>
+
+        <visual name="visual">
+		     <geometry>
+	        	<heightmap>
+	        	<texture>
+		            <diffuse>file://media/materials/textures/white.bmp</diffuse>
+		            <normal>file://media/materials/textures/pioneerBody.jpg</normal>
+		            <size>0</size>
+		          </texture>
+		          
+		          <texture>
+		            <diffuse>file://media/materials/textures/pioneerBody.jpg</diffuse>
+		            <normal>file://media/materials/textures/pioneerBody.jpg</normal>
+		            <size>50</size>
+		          </texture>
+		          
+		         <texture>
+		            <diffuse>file://media/materials/textures/granite.jpg</diffuse>
+		            <normal>file://media/materials/textures/pioneerBody.jpg</normal>
+		            <size>20</size>
+		          </texture>
+              
+		            <blend>
+		            	<min_height>0</min_height>
+		            	<fade_dist>0</fade_dist>
+		            </blend>
+			    	
+		            <blend>
+		            	<min_height>0.01</min_height>
+		            	<fade_dist>0</fade_dist>
+		            </blend>   
+					<uri>model://jarama/images/jaramaCircuitoRetocado.png</uri>
+					<size>250 250 1</size>
+					<pos>0 0 0</pos>
+	        	</heightmap>
+		     </geometry>
+        </visual>
+
+        <surface>
+            <friction>
+              <ode>
+                <mu>10000</mu>
+                <mu2>10000</mu2>
+              </ode>
+            </friction>
+          </surface>
+
+      </link>      
+    </model>
+</sdf>
